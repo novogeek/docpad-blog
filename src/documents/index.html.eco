@@ -1,0 +1,44 @@
+---
+title: 'Home'
+layout: default
+tags: ['page']
+isPaged: true
+pagedCollection: 'posts'
+pageSize: 3
+---
+
+<% posts = @getCollection('posts') %>
+<div class="no-borders">
+    <% for i in [@document.page.startIdx...@document.page.endIdx]: %>
+        <% doc = posts.at(i).toJSON() %>
+        <article class="is-excerpt">
+            <header>
+                <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
+                <h4 class="post-date"><%= doc.date.toLocaleDateString() %></h4>
+                
+            </header>
+            <div class="summary">
+                <%- @generateSummary(doc) %>
+            </div>
+        </article>
+    <% end %>
+</div>
+
+<!-- Page Listing -->
+<div class="pager">
+    <ul>
+        <!-- Previous Page Button -->
+        <% unless @hasPrevPage(): %>
+            <li class="previous disabled"><span>Prev</span></li>
+        <% else: %>
+            <li class="previous"><a href="<%= @getPrevPage() %>">Prev</a></li>
+        <% end %>
+
+        <!-- Next Page Button -->
+        <% unless @hasNextPage(): %>
+            <li class="next disabled"><span>Next</span></li>
+        <% else: %>
+            <li class="next"><a href="<%= @getNextPage() %>">Next</a></li>
+        <% end %>
+    </ul>
+</div>
