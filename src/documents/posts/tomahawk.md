@@ -1,7 +1,8 @@
 ```
 title: Tomahawk
-layout: post
+status: publish
 tags: ['intro','post']
+date: "2013-11-10"
 ```
 
 Compiling and running Tomahawk

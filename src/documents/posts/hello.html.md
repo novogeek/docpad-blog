@@ -1,7 +1,7 @@
 ```
 title: Hello World!
-layout: post
-tags: ['intro','post']
+status: publish
+tags: ['intro']
 date: "2013-11-16"
 ```
 
