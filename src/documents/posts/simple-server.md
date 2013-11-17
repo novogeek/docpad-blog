@@ -2,7 +2,7 @@
 title: Simple Server
 status: publish
 tags: ['intro','post']
-date: "2013-11-13"
+date: "2012-11-13"
 ---
 
 <!-- DESCRIPTION/ -->
@@ -16,11 +16,11 @@ Simple Server allows you to easily get a node.js static file server up and runni
 
 ### Install
 
-### [Node](http://nodejs.org/), [Browserify](http://browserify.org/)
+[Node](http://nodejs.org/), [Browserify](http://browserify.org/)
 - Use: `require('simple-server')`
 - Install: `npm install --save simple-server`
 
-### [Ender](http://ender.jit.su/)
+[Ender](http://ender.jit.su/)
 - Use: `require('simple-server')`
 - Install: `ender add simple-server`
 

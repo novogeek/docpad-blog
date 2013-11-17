@@ -5,4 +5,5 @@ tags: ['page']
 pageOrder: 3
 ```
 
-Tweet me! **@novogeek**
+- Twitter: [@novogeek](http://twitter.com/novogeek)
+- Github: [novogeek](http://github.com/novogeek)
