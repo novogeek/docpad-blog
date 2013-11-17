@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-
-<article id="page" class="page">
-	<h1><%= @document.title %></h1>
-	<div class="page-content"><%- @content %></div>
+<article class="panel panel-default">
+    <header class="panel-heading">
+		<h2 class="panel-title"><%= @document.title %></h2>
+	</header>
+	<div class="panel-body">
+		<div class="summary">
+			<div><%- @parseMarkdown(@content) %></div>
+		</div>
+	</div>   
 </article>

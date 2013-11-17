@@ -44,8 +44,14 @@ hr {
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-.nav > li > a {
+.breadcrumb {
     padding-left: 0px;
+    min-width: 250px;
+    background-color: transparent;
+}
+
+h1 a {
+    text-decoration: none;
 }
 /*
 .navbar {

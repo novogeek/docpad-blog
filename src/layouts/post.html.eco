@@ -2,24 +2,21 @@
 layout: default
 ---
 
-<article id="post" class="post">
-	<h1><%= @document.title %></h1>
-	<div class="post-content"><%- @parseMarkdown(@content) %></div>
+<article class="panel panel-default">
+    <header class="panel-heading">
+		<h2 class="panel-title"><%= @document.title %></h2>
+	</header>
+	<div class="panel-body">
+        <div class="spDateTags">
+			<span class="glyphicon glyphicon-time"> </span> <%= @document.date.toLocaleDateString() %>
+			<%- @partial('tags.html.eco', @, { tags: @document.tags }) %>
+			<hr>
+		</div>
+		<div class="summary">
+			<div><%- @parseMarkdown(@content) %></div>
+		</div>
+	</div>   
 </article>
-
-<h2><%= "Posts tagged as '#{@document.tag}'" %></h2>
-<% for doc in @getCollection('posts').findAll({tags: '$in': @document.tag}, [{ date: -1 }]).toJSON(): %>
-    <article class="is-excerpt">
-    <header>
-        <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
-        <h3 class="post-date"><%= @formatDate(doc.date) %></h3>
-        <%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
-    </header>
-    <div class="summary">
-        <%- @generateSummary(doc) %>
-    </div>
-    </article>
-<% end %>
 
 <footer>
 	<% if  @document.relatedDocuments and @document.relatedDocuments.length: %>

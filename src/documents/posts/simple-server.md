@@ -1,5 +1,6 @@
 ---
 title: Simple Server
+status: publish
 tags: ['intro','post']
 date: "2013-11-13"
 ---

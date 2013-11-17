@@ -47,7 +47,8 @@
         <p>Created using Docpad, the most awesome static site generator.</p>
 
 		<div role="navigation">
-			<ul class="nav nav-pills">
+			<ul class="breadcrumb">
+					<li class="active"><a href="/">Home</a></li>
 			  	   <% for document in @getCollection('pages').toJSON(): %>
 					<li
 						typeof="sioc:Page"
