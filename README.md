@@ -19,4 +19,4 @@
 
 ## License
 
-Refer [License.md](/license.md/)
+Refer [License.md](/LICENSE.md/)
