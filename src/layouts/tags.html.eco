@@ -1,0 +1,30 @@
+---
+layout: default
+---
+        <div id="main-wrapper">
+            <div id="main" class="container">
+                <div class="row">
+                    <div id="content" class="12u skel-cell-mainContent">
+                      <div class="no-borders">
+                        <h2><%= "Posts tagged as '#{@document.tag}'" %></h2>
+                        <% for doc in @getCollection('posts').findAll({tags: '$in': @document.tag}, [{ date: -1 }]).toJSON(): %>
+                          <article class="is-excerpt">
+                            <header>
+                                <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
+                                <h3 class="post-date"><%= @formatDate(doc.date) %></h3>
+                                <%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
+                            </header>
+                            <div class="summary">
+                                <%- @generateSummary(doc) %>
+                            </div>
+                          </article>
+                        <% end %>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <%- @partial('footer.html.eco', @) %>
+  </body>
+</html>

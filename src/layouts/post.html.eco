@@ -7,6 +7,20 @@ layout: default
 	<div class="post-content"><%- @parseMarkdown(@content) %></div>
 </article>
 
+<h2><%= "Posts tagged as '#{@document.tag}'" %></h2>
+<% for doc in @getCollection('posts').findAll({tags: '$in': @document.tag}, [{ date: -1 }]).toJSON(): %>
+    <article class="is-excerpt">
+    <header>
+        <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
+        <h3 class="post-date"><%= @formatDate(doc.date) %></h3>
+        <%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
+    </header>
+    <div class="summary">
+        <%- @generateSummary(doc) %>
+    </div>
+    </article>
+<% end %>
+
 <footer>
 	<% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
 	<section id="related">
