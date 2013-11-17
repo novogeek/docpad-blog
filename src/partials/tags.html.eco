@@ -1,7 +1,9 @@
-<ul id="post-tags" class="tags flat-list">
+<ul id="post-tags" class="breadcrumb">
     <% if @tags: %>
         <% for tag in @tags: %>
-            <li><a class="icon icon-tag" href="<%- @getTagUrl(tag) %>"><span><%- tag %></span></a></li>
+            <li>
+              <span class="glyphicon glyphicon-tag"></span><a href="<%- @getTagUrl(tag) %>"><%- tag %></a>
+            </li>
         <% end %>
     <% end %>
 </ul>

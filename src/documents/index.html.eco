@@ -14,8 +14,11 @@ pageSize: 3
         <article class="is-excerpt">
             <header>
                 <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
-                <h4 class="post-date"><%= doc.date.toLocaleDateString() %></h4>
-                <%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
+                <span class="spDateTags">
+					<span class="spDate post-date"><%= doc.date.toLocaleDateString() %></span>
+					<%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
+				</span>
+                
             </header>
             <div class="summary">
                 <%- @generateSummary(doc) %>
