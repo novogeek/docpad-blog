@@ -7,13 +7,34 @@ footer {
 }
 
 .spDateTags {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 .spDate {
-    font-size: 18px;
+    font-size: 1em;
 }
-
+.spTag {
+    margin-left: 5px;
+}
 #post-tags {
     display: inline-block;
+}
+
+.summary {
+    font-size: 1.2em;
+}
+
+/* Bootstrap overrides */
+header.panel-heading a {
+    color: #428bca;
+    text-decoration: none;
+}
+.panel-title {
+      font-size: 1.65em;
+}
+.breadcrumb {
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

@@ -85,7 +85,7 @@ docpadConfig = {
 
 		parseMarkdown: (str) -> marked(str)
 		formatDate: (date) -> moment(date).format('Do MMMM YYYY')
-		contentTrim: (str) -> if str.length > 200 then str.slice(0, 197) + '...' else str
+		contentTrim: (str) -> if str.length > 300 then str.slice(0, 297) + '...' else str
 		generateSummary: (post) -> 
 		  description = post.description
 		  if description then @parseMarkdown(description) else @contentTrim(@parseMarkdown(post.content))

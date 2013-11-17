@@ -7,12 +7,12 @@ date: "2013-11-14"
 Super-seeded by github.com/balupton/history.js - jQuery History allows you to easily track changes of the pages state by tracking URL Hashes. Supports changes triggered by bookmarks and back & forward buttons, as well as cross browser support.
 
 
-## Usage
+### Usage
 
 Refer to the [demo](http://balupton.github.com/jquery-history/demo/) and the [source code](https://github.com/balupton/jquery-history/tree/master/scripts/resources)
 
 
-## Query Strings
+### Query Strings
 
 If you would like to have a QueryString in your hash and fetch the contents of it. So for example we have:
 

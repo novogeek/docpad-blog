@@ -2,7 +2,8 @@
     <% if @tags: %>
         <% for tag in @tags: %>
             <li>
-              <span class="glyphicon glyphicon-tag"></span><a href="<%- @getTagUrl(tag) %>"><%- tag %></a>
+              <span class="glyphicon glyphicon-tag"></span>
+              <span class="spTag"> <a href="<%- @getTagUrl(tag) %>"><%- tag %></a></span>
             </li>
         <% end %>
     <% end %>

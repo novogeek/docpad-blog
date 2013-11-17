@@ -8,21 +8,24 @@ pageSize: 3
 ---
 
 <% posts = @getCollection('posts') %>
-<div class="no-borders">
+<div>
     <% for i in [@document.page.startIdx...@document.page.endIdx]: %>
         <% doc = posts.at(i).toJSON() %>
-        <article class="is-excerpt">
-            <header>
-                <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
-                <span class="spDateTags">
-					<span class="spDate post-date"><%= doc.date.toLocaleDateString() %></span>
+        <article class="panel panel-default">
+            <header class="panel-heading">
+				<h2 class="panel-title"><a href='<%= doc.url %>'><%= doc.title %></a></h2>
+			</header>
+			<div class="panel-body">
+                <div class="spDateTags">
+					<span class="glyphicon glyphicon-time"> </span> <%= doc.date.toLocaleDateString() %>
 					<%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
-				</span>
-                
-            </header>
-            <div class="summary">
-                <%- @generateSummary(doc) %>
-            </div>
+					<hr>
+				</div>
+				<div class="summary">
+					<div><%- @generateSummary(doc) %></div>
+					<div><a class="btn btn-primary" href='<%= doc.url %>'>Read More <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+				</div>
+			</div>   
         </article>
     <% end %>
 </div>

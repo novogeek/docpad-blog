@@ -11,8 +11,10 @@ layout: default
                           <article class="is-excerpt">
                             <header>
                                 <h2><a href='<%= doc.url %>'><%= doc.title %></a></h2>
-                                <span><h3 class="post-date"><%= @formatDate(doc.date) %></h3>
-                                <%- @partial('tags.html.eco', @, { tags: doc.tags }) %></span>
+                                <span class="spDateTags">
+									<span class="spDate post-date"><%= doc.date.toLocaleDateString() %></span>
+									<%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
+								</span>
                             </header>
                             <div class="summary">
                                 <%- @generateSummary(doc) %>
