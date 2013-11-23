@@ -20,3 +20,7 @@
 ## License
 
 Refer [License.md](/LICENSE.md/)
+
+## Credits
+* Blog layout: [Startbootstrap.com](http://startbootstrap.com/all-templates )
+* Themes: [Bootswatch.com](http://bootswatch.com/)

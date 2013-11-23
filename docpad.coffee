@@ -45,7 +45,9 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"/styles/bootstrap.css"
+				"/styles/bootstrap-flatly.css"
+                #"/styles/bootswatch.css"
+                #"/styles/bootstrap-original.css"
 				"/styles/blog-home.css"
 			]
 

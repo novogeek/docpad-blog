@@ -1,7 +1,7 @@
 ```
 title: Tomahawk
 status: publish
-tags: ['intro','post']
+tags: ['intro','script']
 date: "2009-11-10"
 ```
 Required dependencies:

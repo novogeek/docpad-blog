@@ -17,13 +17,13 @@ pageSize: 3
 			</header>
 			<div class="panel-body">
                 <div class="spDateTags">
-					<span class="glyphicon glyphicon-time"> </span> <%= doc.date.toLocaleDateString() %>
+					<span class="spDate"><span class="glyphicon glyphicon-time"> </span> <%= doc.date.toLocaleDateString() %></span>
 					<%- @partial('tags.html.eco', @, { tags: doc.tags }) %>
 					<hr>
 				</div>
 				<div class="summary">
 					<div><%- @generateSummary(doc) %></div>
-					<div><a class="btn btn-primary" href='<%= doc.url %>'>Read More <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+					<div><a class="btn btn-primary btn-sm" href='<%= doc.url %>'>Read More <span class="glyphicon glyphicon-chevron-right"></span></a></div>
 				</div>
 			</div>   
         </article>

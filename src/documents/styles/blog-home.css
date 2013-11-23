@@ -11,6 +11,7 @@ footer {
 }
 .spDate {
     font-size: 1em;
+    margin-right: 10px;
 }
 .spTag {
     margin-left: 5px;
@@ -24,10 +25,31 @@ footer {
 }
 
 /* Bootstrap overrides */
-header.panel-heading a {
+/*
+.jumbotron a, header.panel-heading a {
     color: #428bca;
     text-decoration: none;
 }
+
+
+*/
+h1, h2 {
+    text-transform: none;
+    font-weight:normal;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 a {
+    text-decoration: none;
+}
+h1 a:hover {text-decoration:none;}
+.jumbotron h1 {
+    font-size: 65px;
+}
+
+p {
+    margin-bottom: 0px; 
+}
+
 .panel-title {
       font-size: 1.65em;
 }
@@ -50,14 +72,29 @@ hr {
     background-color: transparent;
 }
 
-h1 a {
-    text-decoration: none;
+header {
+    margin-bottom: 20px;
 }
-h1 a:hover {text-decoration:none;}
-/*
 .navbar {
-    margin: 5px 0 5px 0;
+    margin: 20px 0 0 0;
 }
+.splash{
+    /*-color:#1c2533;*/
+    background:-webkit-linear-gradient(70deg, #080f1f 30%, #2b4b5a 87%, #435e67 100%);
+    background:-o-linear-gradient(70deg, #080f1f 30%, #2b4b5a 87%, #435e67 100%);
+    background:-ms-linear-gradient(70deg, #080f1f 30%, #2b4b5a 87%, #435e67 100%);
+    background:-moz-linear-gradient(70deg, #080f1f 30%, #2b4b5a 87%, #435e67 100%);
+    background:linear-gradient(20deg, #080f1f 30%, #2b4b5a 87%, #435e67 100%);
+    background-attachment:fixed;
+    padding:1em 0 0;
+    color:#fff;
+    text-align:center
+}
+.splash h1{font-size:4em}
+.pager li > a {
+    background-color: none;
+}
+/*
 .navbar-nav > li {
     border-right: solid 1px #b0b0b0;
 }
