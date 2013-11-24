@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>NovoGeek.com | Krishna's weblog</title>
+	<link href="http://kittu.in/docpad-blog//atom.xml" rel="self"/>
+	<link href="http://kittu.in/docpad-blog/"/>
+	<updated>2013-11-24T21:08:40.694Z</updated>
+	<id>http://kittu.in/docpad-blog/</id>
+	<author>
+		<name>Krishna Chaitanya Telikicherla</name>
+		<email>your@email.com</email>
+	</author>
+
+	
+		<entry>
+			<title>DocPad. Streamlined web development.</title>
+			<link href="http://kittu.in/docpad-blog///posts/docpad"/>
+			<updated>2013-11-16T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/docpad</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;DocPad. Streamlined web development. | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;DocPad. Streamlined web development.&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Saturday, November 16, 2013
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro&quot;&gt;outro&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech&quot;&gt;tech&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script&quot;&gt;script&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;p&gt;Hi! I&amp;#39;m DocPad, I streamline the web development process and help close the gap between experts and beginners. I&amp;#39;ve been used in production by big and small companies for over a year and a half now to create &lt;a href=&quot;http://docpad.org/docs/showcase&quot;&gt;plenty of amazing and powerful web sites and applications&lt;/a&gt; quicker than ever before. What makes me different is instead of being a box to cram yourself into and hold you back, I&amp;#39;m a freeway to what you want to accomplish, just getting out of your way and allowing you to create stuff quicker than ever before without limits. Leave the redudant stuff up to me, so you can focus on the awesome stuff.&lt;/p&gt;
+&lt;p&gt;Discover my features below, or skip ahead to the installation instructions to get started with a &lt;a href=&quot;http://docpad.org/docs/skeletons&quot;&gt;fully functional pre-made website&lt;/a&gt; in a few minutes from reading this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=hvQCXDWh7Wg&amp;amp;feature=share&amp;amp;list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf&quot;&gt;Watch the Screencast!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+&lt;h3 id=&quot;out-of-the-box&quot;&gt;Out of the box&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Competely file based meaning there is no pesky databases that need to be installed, and for version control you get to use systems like Git and SVN which you&amp;#39;re already use to (You can still hook in remote data sources if you want, DocPad doesn&amp;#39;t impose any limits on you, ever)&lt;/li&gt;
+&lt;li&gt;Choose from plenty of community maintained &lt;a href=&quot;http://docpad.org/docs/skeletons&quot;&gt;pre-made websites&lt;/a&gt; to use for your next project instead of starting from scratch everytime&lt;/li&gt;
+&lt;li&gt;Write your documents in any language, markup, templating engine, or pre-processor you wish (we&amp;#39;re truly agnostic thanks to your plugin system). You can even mix and match them when needed by combining their extensions in a rails like fashion (e.g. &lt;code&gt;coffee-with-some-eco.js.coffee.eco&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Changes to your website are automatically recompiled through our built in watch system&lt;/li&gt;
+&lt;li&gt;Add meta data to the top of your files to be used by templating engines to display non-standard information such as titles and descriptions for your documents&lt;/li&gt;
+&lt;li&gt;Display custom listings of content with our powerful &lt;a href=&quot;https://github.com/bevry/query-engine/&quot;&gt;Query Engine&lt;/a&gt; available to your templating engines&lt;/li&gt;
+&lt;li&gt;Abstract out generic headers and footers into layouts using our nested layout system&lt;/li&gt;
+&lt;li&gt;For simple static websites easily deploy your generated website to any web server like apache or github pages. For dynamic projects deploy them to servers like &lt;a href=&quot;http://www.heroku.com/&quot;&gt;heroku&lt;/a&gt; or &lt;a href=&quot;http://nodejitsu.com/&quot;&gt;nodejitsu&lt;/a&gt; to take advantage of custom routing with &lt;a href=&quot;http://expressjs.com/&quot;&gt;express.js&lt;/a&gt;. &lt;a href=&quot;http://docpad.org/docs/deploy&quot;&gt;Deploy guide here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Built-in server to save you from having to startup your own, for dynamic deployments this even supports things like clean urls, custom routes and server-side logic&lt;/li&gt;
+&lt;li&gt;Robust architecture and powerful plugin system means that you are never boxed in unlike traditional CMS systems, instead you can always &lt;a href=&quot;http://docpad.org/docs/extend&quot;&gt;extend DocPad&lt;/a&gt; to do whatever you need it to do, and you can even write to bundle common custom functionality and distribute them through the amazing node package manager &lt;a href=&quot;http://npmjs.org/&quot;&gt;npm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Built in support for dynamic documents (e.g. search pages, signup forms, etc.), so you can code pages that change on each request by just adding &lt;code&gt;dynamic: true&lt;/code&gt; to your document&amp;#39;s meta data (exposes the &lt;a href=&quot;http://expressjs.com/&quot;&gt;express.js&lt;/a&gt; &lt;code&gt;req&lt;/code&gt; and &lt;code&gt;res&lt;/code&gt; objects to your templating engine)&lt;/li&gt;
+&lt;li&gt;You can use it standalone, or even easily include it within your existing systems with our &lt;a href=&quot;http://docpad.org/docs/api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;with-our-amazing-community-maintained-plugins&quot;&gt;With our amazing community maintained plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;a href=&quot;http://docpad.org/plugin/livereload/&quot;&gt;Live Reload&lt;/a&gt; plugin to automatically refresh your web browser whenever a change is made, this is amazing&lt;/li&gt;
+&lt;li&gt;Pull in remote RSS/Atom/JSON feeds into your templating engines allowing you to display your latest twitter updates or github projects easily and effortlessly using the &lt;a href=&quot;http://docpad.org/plugin/feedr/&quot;&gt;Feedr Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for every templating engine and pre-processor under the sun, including  but not limited to CoffeeScript, CoffeeKup, ECO, HAML, Handlebars, Jade, Less, Markdown, PHP, Ruby, SASS and Stylus - &lt;a href=&quot;http://docpad.org/docs/plugins&quot;&gt;the full listing is here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use the &lt;a href=&quot;http://docpad.org/plugin/partials&quot;&gt;Partials Plugin&lt;/a&gt; to abstract common pieces of code into their own individual file that can be included as much as you want&lt;/li&gt;
+&lt;li&gt;Syntax highlight code blocks automatically with either our &lt;a href=&quot;http://docpad.org/plugin/highlightjs/&quot;&gt;Highlight.js Plugin&lt;/a&gt; or &lt;a href=&quot;http://docpad.org/plugin/pygments/&quot;&gt;Pygments Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get SEO friendly clean URLs with our &lt;a href=&quot;http://docpad.org/plugin/cleanurls/&quot;&gt;Clean URLs Plugin&lt;/a&gt; (dynamic deployments only)&lt;/li&gt;
+&lt;li&gt;Lint your code automatically with our Ling Plugins: &lt;a href=&quot;https://github.com/jking90/docpad-plugin-jshint&quot;&gt;jshint&lt;/a&gt; and &lt;a href=&quot;https://github.com/jking90/docpad-plugin-coffeelint&quot;&gt;coffeelint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Concatenate and minify your JavaScript and CSS assets making page loads faster for your users with our Minify Plugins: &lt;a href=&quot;https://github.com/robloach/docpad-plugin-htmlmin&quot;&gt;htmlmin&lt;/a&gt; and &lt;a href=&quot;https://gist.github.com/balupton/3898915&quot;&gt;grunt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install common javascript libraries like jQuery, Backbone and Underscore directly from the command line - under construction, coming soon&lt;/li&gt;
+&lt;li&gt;Automatically translate your entire website into other languages with our Translation Plugin - under construction, coming soon&lt;/li&gt;
+&lt;li&gt;Add a admin interface to your website allowing you to edit, save and preview your changes on live websites then push them back to your source repository with the &lt;a href=&quot;http://docpad.org/docs/plugins#admin-interfaces&quot;&gt;Admin Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pretty much if DocPad doesn&amp;#39;t already do something, it is trivial to &lt;a href=&quot;http://docpad.org/docs/extend&quot;&gt;write a plugin&lt;/a&gt; to do it, seriously DocPad can accomplish anything, it never holds you back, there are no limits, it&amp;#39;s like super powered guardian angel&lt;/li&gt;
+&lt;li&gt;There are also &lt;a href=&quot;http://docpad.org/docs/plugins&quot;&gt;plenty of other plugins&lt;/a&gt; not listed here that are still definitely worth checking out! :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;people-love-docpad&quot;&gt;People love DocPad&lt;/h2&gt;
+&lt;p&gt;All sorts of people love DocPad, from first time web developers to even industry leaders and experts. In fact, people even migrate to DocPad from other systems as they love it so much. Here are some our &lt;a href=&quot;https://twitter.com/#!/DocPad/favorites&quot;&gt;favourite tweets&lt;/a&gt; of what people are saying about DocPad :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/#!/DocPad/favorites&quot;&gt;&lt;img src=&quot;http://d.pr/i/s66H+&quot; alt=&quot;Some favourite tweets about DocPad&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://docpad.org/docs/install&quot;&gt;Click here for our latest Install Instructions.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://docpad.org/docs/start&quot;&gt;Click here to skip ahead to our latest Quick Start Guide.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-next-&quot;&gt;What next?&lt;/h2&gt;
+&lt;p&gt;Here are some quick links to help you get started:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/intro&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/faq&quot;&gt;Frequently Asked Questions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/showcase&quot;&gt;Showcase and Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/&quot;&gt;Guides and Tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/deploy&quot;&gt;Deployment Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/extend&quot;&gt;Extension Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/plugins&quot;&gt;Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/skeletons&quot;&gt;Skeletons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/troubleshoot&quot;&gt;Troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/support&quot;&gt;Support Channels&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/issues&quot;&gt;Bug Tracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://webchat.freenode.net?channels=docpad&quot;&gt;IRC Chat Room: &lt;code&gt;#docpad&lt;/code&gt; on freenode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/docs/&quot;&gt;Everything else&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- HISTORY/ --&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bevry/docpad/blob/master/History.md#files&quot;&gt;Discover the change history by heading on over to the &lt;code&gt;History.md&lt;/code&gt; file.&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /HISTORY --&gt;
+
+
+&lt;!-- CONTRIBUTE/ --&gt;
+
+&lt;h2 id=&quot;contribute&quot;&gt;Contribute&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bevry/docpad/blob/master/Contributing.md#files&quot;&gt;Discover how you can contribute by heading on over to the &lt;code&gt;Contributing.md&lt;/code&gt; file.&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /CONTRIBUTE --&gt;
+
+
+&lt;!-- BACKERS/ --&gt;
+
+&lt;h2 id=&quot;backers&quot;&gt;Backers&lt;/h2&gt;
+&lt;h3 id=&quot;maintainers&quot;&gt;Maintainers&lt;/h3&gt;
+&lt;p&gt;These amazing people are maintaining this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Benjamin Lupton &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#98;&amp;#x40;&amp;#108;&amp;#x75;&amp;#x70;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x63;&quot;&gt;&amp;#98;&amp;#x40;&amp;#108;&amp;#x75;&amp;#x70;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x63;&lt;/a&gt; (&lt;a href=&quot;https://github.com/balupton&quot;&gt;https://github.com/balupton&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sponsors&quot;&gt;Sponsors&lt;/h3&gt;
+&lt;p&gt;These amazing people have contributed finances to this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Myplanet Digital &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x68;&amp;#101;&amp;#108;&amp;#x6c;&amp;#111;&amp;#64;&amp;#109;&amp;#121;&amp;#112;&amp;#108;&amp;#x61;&amp;#110;&amp;#101;&amp;#116;&amp;#x64;&amp;#105;&amp;#103;&amp;#x69;&amp;#116;&amp;#x61;&amp;#108;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x68;&amp;#101;&amp;#108;&amp;#x6c;&amp;#111;&amp;#64;&amp;#109;&amp;#121;&amp;#112;&amp;#108;&amp;#x61;&amp;#110;&amp;#101;&amp;#116;&amp;#x64;&amp;#105;&amp;#103;&amp;#x69;&amp;#116;&amp;#x61;&amp;#108;&amp;#46;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;http://www.myplanetdigital.com&quot;&gt;http://www.myplanetdigital.com&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Meeho! &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#105;&amp;#x6e;&amp;#x66;&amp;#111;&amp;#64;&amp;#109;&amp;#x65;&amp;#x65;&amp;#x68;&amp;#111;&amp;#x2e;&amp;#110;&amp;#101;&amp;#x74;&quot;&gt;&amp;#105;&amp;#x6e;&amp;#x66;&amp;#111;&amp;#64;&amp;#109;&amp;#x65;&amp;#x65;&amp;#x68;&amp;#111;&amp;#x2e;&amp;#110;&amp;#101;&amp;#x74;&lt;/a&gt; (&lt;a href=&quot;http://www.meeho.net&quot;&gt;http://www.meeho.net&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Become a sponsor!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gittip.com/docpad/&quot; title=&quot;Donate weekly to this project using Gittip&quot;&gt;&lt;img src=&quot;http://img.shields.io/gittip/docpad.png&quot; alt=&quot;Gittip donate button&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;http://flattr.com/thing/344188/balupton-on-Flattr&quot; title=&quot;Donate monthly to this project using Flattr&quot;&gt;&lt;img src=&quot;http://img.shields.io/flattr/donate.png?color=yellow&quot; alt=&quot;Flattr donate button&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=QB8GQPZAH84N6&quot; title=&quot;Donate once-off to this project using Paypal&quot;&gt;&lt;img src=&quot;http://img.shields.io/paypal/donate.png?color=yellow&quot; alt=&quot;PayPayl donate button&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;contributors&quot;&gt;Contributors&lt;/h3&gt;
+&lt;p&gt;These amazing people have contributed code to this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aaron Powell &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#x6d;&amp;#101;&amp;#x40;&amp;#97;&amp;#97;&amp;#114;&amp;#x6f;&amp;#x6e;&amp;#45;&amp;#x70;&amp;#x6f;&amp;#x77;&amp;#x65;&amp;#x6c;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x6d;&amp;#101;&amp;#x40;&amp;#97;&amp;#97;&amp;#114;&amp;#x6f;&amp;#x6e;&amp;#45;&amp;#x70;&amp;#x6f;&amp;#x77;&amp;#x65;&amp;#x6c;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/aaronpowell&quot;&gt;https://github.com/aaronpowell&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=aaronpowell&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adrian Olaru &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#97;&amp;#103;&amp;#111;&amp;#x6c;&amp;#x61;&amp;#114;&amp;#117;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#97;&amp;#103;&amp;#111;&amp;#x6c;&amp;#x61;&amp;#114;&amp;#117;&amp;#x40;&amp;#x67;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/adrianolaru&quot;&gt;https://github.com/adrianolaru&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=adrianolaru&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Alex (&lt;a href=&quot;https://github.com/amesarosh&quot;&gt;https://github.com/amesarosh&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=amesarosh&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Andrew Patton &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x61;&amp;#x6e;&amp;#x64;&amp;#114;&amp;#101;&amp;#119;&amp;#64;&amp;#x61;&amp;#99;&amp;#x75;&amp;#x73;&amp;#116;&amp;#105;&amp;#46;&amp;#x63;&amp;#97;&quot;&gt;&amp;#x61;&amp;#x6e;&amp;#x64;&amp;#114;&amp;#101;&amp;#119;&amp;#64;&amp;#x61;&amp;#99;&amp;#x75;&amp;#x73;&amp;#116;&amp;#105;&amp;#46;&amp;#x63;&amp;#97;&lt;/a&gt; (&lt;a href=&quot;https://github.com/acusti&quot;&gt;https://github.com/acusti&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=acusti&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ashnur (&lt;a href=&quot;https://github.com/ashnur&quot;&gt;https://github.com/ashnur&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=ashnur&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ben Barber (&lt;a href=&quot;https://github.com/barberboy&quot;&gt;https://github.com/barberboy&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=barberboy&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Benjamin Lupton &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#98;&amp;#64;&amp;#108;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#99;&quot;&gt;&amp;#98;&amp;#64;&amp;#108;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#99;&lt;/a&gt; (&lt;a href=&quot;https://github.com/balupton&quot;&gt;https://github.com/balupton&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=balupton&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bruno Héridet (&lt;a href=&quot;https://github.com/Delapouite&quot;&gt;https://github.com/Delapouite&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=Delapouite&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Changwoo Park &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#112;&amp;#105;&amp;#115;&amp;#109;&amp;#x75;&amp;#x74;&amp;#101;&amp;#x40;&amp;#103;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#112;&amp;#105;&amp;#115;&amp;#109;&amp;#x75;&amp;#x74;&amp;#101;&amp;#x40;&amp;#103;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/pismute&quot;&gt;https://github.com/pismute&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=pismute&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chase Colman &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#x63;&amp;#x68;&amp;#97;&amp;#115;&amp;#101;&amp;#x40;&amp;#x69;&amp;#110;&amp;#x66;&amp;#105;&amp;#x6e;&amp;#105;&amp;#116;&amp;#121;&amp;#97;&amp;#x74;&amp;#x6c;&amp;#x61;&amp;#115;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#x63;&amp;#x68;&amp;#97;&amp;#115;&amp;#101;&amp;#x40;&amp;#x69;&amp;#110;&amp;#x66;&amp;#105;&amp;#x6e;&amp;#105;&amp;#116;&amp;#121;&amp;#97;&amp;#x74;&amp;#x6c;&amp;#x61;&amp;#115;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/chase&quot;&gt;https://github.com/chase&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=chase&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;eldios &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x6c;&amp;#x65;&amp;#108;&amp;#x65;&amp;#64;&amp;#x61;&amp;#109;&amp;#105;&amp;#x63;&amp;#111;&amp;#102;&amp;#105;&amp;#x67;&amp;#x6f;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x6c;&amp;#x65;&amp;#108;&amp;#x65;&amp;#64;&amp;#x61;&amp;#109;&amp;#105;&amp;#x63;&amp;#111;&amp;#102;&amp;#105;&amp;#x67;&amp;#x6f;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/eldios&quot;&gt;https://github.com/eldios&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=eldios&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ferrari Lee &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#115;&amp;#104;&amp;#105;&amp;#121;&amp;#x75;&amp;#110;&amp;#103;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#115;&amp;#104;&amp;#105;&amp;#121;&amp;#x75;&amp;#110;&amp;#103;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/Ferrari&quot;&gt;https://github.com/Ferrari&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=Ferrari&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Homme Zwaagstra &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x68;&amp;#x72;&amp;#x7a;&amp;#64;&amp;#103;&amp;#x65;&amp;#x6f;&amp;#x64;&amp;#97;&amp;#116;&amp;#97;&amp;#x2e;&amp;#115;&amp;#111;&amp;#x74;&amp;#111;&amp;#x6e;&amp;#46;&amp;#x61;&amp;#99;&amp;#46;&amp;#117;&amp;#107;&quot;&gt;&amp;#x68;&amp;#x72;&amp;#x7a;&amp;#64;&amp;#103;&amp;#x65;&amp;#x6f;&amp;#x64;&amp;#97;&amp;#116;&amp;#97;&amp;#x2e;&amp;#115;&amp;#111;&amp;#x74;&amp;#111;&amp;#x6e;&amp;#46;&amp;#x61;&amp;#99;&amp;#46;&amp;#117;&amp;#107;&lt;/a&gt; (&lt;a href=&quot;https://github.com/homme&quot;&gt;https://github.com/homme&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=homme&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Luke Hagan (&lt;a href=&quot;https://github.com/lhagan&quot;&gt;https://github.com/lhagan&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=lhagan&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Neil Taylor &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x6e;&amp;#101;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x74;&amp;#x40;&amp;#109;&amp;#x79;&amp;#112;&amp;#108;&amp;#97;&amp;#110;&amp;#x65;&amp;#116;&amp;#100;&amp;#x69;&amp;#x67;&amp;#x69;&amp;#x74;&amp;#x61;&amp;#108;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x6e;&amp;#101;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x74;&amp;#x40;&amp;#109;&amp;#x79;&amp;#112;&amp;#108;&amp;#97;&amp;#110;&amp;#x65;&amp;#116;&amp;#100;&amp;#x69;&amp;#x67;&amp;#x69;&amp;#x74;&amp;#x61;&amp;#108;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/neilbaylorrulez&quot;&gt;https://github.com/neilbaylorrulez&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=neilbaylorrulez&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nick Crohn &lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#110;&amp;#x63;&amp;#x72;&amp;#111;&amp;#104;&amp;#x6e;&amp;#64;&amp;#x6d;&amp;#x65;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#110;&amp;#x63;&amp;#x72;&amp;#111;&amp;#104;&amp;#x6e;&amp;#64;&amp;#x6d;&amp;#x65;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/ncrohn&quot;&gt;https://github.com/ncrohn&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=ncrohn&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Olivier Bazoud (&lt;a href=&quot;https://github.com/obazoud&quot;&gt;https://github.com/obazoud&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=obazoud&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Paul Armstrong &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#112;&amp;#x61;&amp;#117;&amp;#x6c;&amp;#64;&amp;#112;&amp;#97;&amp;#x75;&amp;#108;&amp;#97;&amp;#114;&amp;#109;&amp;#x73;&amp;#x74;&amp;#x72;&amp;#111;&amp;#x6e;&amp;#x67;&amp;#100;&amp;#101;&amp;#115;&amp;#x69;&amp;#x67;&amp;#110;&amp;#115;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#112;&amp;#x61;&amp;#117;&amp;#x6c;&amp;#64;&amp;#112;&amp;#97;&amp;#x75;&amp;#108;&amp;#97;&amp;#114;&amp;#109;&amp;#x73;&amp;#x74;&amp;#x72;&amp;#111;&amp;#x6e;&amp;#x67;&amp;#100;&amp;#101;&amp;#115;&amp;#x69;&amp;#x67;&amp;#110;&amp;#115;&amp;#46;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/paularmstrong&quot;&gt;https://github.com/paularmstrong&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=paularmstrong&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pflannery (&lt;a href=&quot;https://github.com/pflannery&quot;&gt;https://github.com/pflannery&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=pflannery&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Richard A &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x72;&amp;#x69;&amp;#99;&amp;#104;&amp;#97;&amp;#114;&amp;#100;&amp;#64;&amp;#97;&amp;#x6e;&amp;#x74;&amp;#101;&amp;#99;&amp;#x6b;&amp;#105;&amp;#x2e;&amp;#x69;&amp;#100;&amp;#x2e;&amp;#97;&amp;#x75;&quot;&gt;&amp;#x72;&amp;#x69;&amp;#99;&amp;#104;&amp;#97;&amp;#114;&amp;#100;&amp;#64;&amp;#97;&amp;#x6e;&amp;#x74;&amp;#101;&amp;#99;&amp;#x6b;&amp;#105;&amp;#x2e;&amp;#x69;&amp;#100;&amp;#x2e;&amp;#97;&amp;#x75;&lt;/a&gt; (&lt;a href=&quot;https://github.com/rantecki&quot;&gt;https://github.com/rantecki&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=rantecki&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sorin Ionescu &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#115;&amp;#111;&amp;#114;&amp;#105;&amp;#x6e;&amp;#46;&amp;#105;&amp;#x6f;&amp;#x6e;&amp;#x65;&amp;#x73;&amp;#99;&amp;#x75;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#115;&amp;#111;&amp;#114;&amp;#105;&amp;#x6e;&amp;#46;&amp;#105;&amp;#x6f;&amp;#x6e;&amp;#x65;&amp;#x73;&amp;#99;&amp;#x75;&amp;#x40;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/sorin-ionescu&quot;&gt;https://github.com/sorin-ionescu&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=sorin-ionescu&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stefan (&lt;a href=&quot;https://github.com/stegrams&quot;&gt;https://github.com/stegrams&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=stegrams&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sven Vetsch (&lt;a href=&quot;https://github.com/disenchant&quot;&gt;https://github.com/disenchant&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=disenchant&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Todd Anglin (&lt;a href=&quot;https://github.com/toddanglin&quot;&gt;https://github.com/toddanglin&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=toddanglin&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ttamminen (&lt;a href=&quot;https://github.com/ttamminen&quot;&gt;https://github.com/ttamminen&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=ttamminen&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vladislav Botvin &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#x64;&amp;#97;&amp;#114;&amp;#107;&amp;#x76;&amp;#108;&amp;#97;&amp;#100;&amp;#111;&amp;#115;&amp;#x40;&amp;#x6d;&amp;#x65;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&quot;&gt;&amp;#x64;&amp;#97;&amp;#114;&amp;#107;&amp;#x76;&amp;#108;&amp;#97;&amp;#100;&amp;#111;&amp;#115;&amp;#x40;&amp;#x6d;&amp;#x65;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt; (&lt;a href=&quot;https://github.com/darrrk&quot;&gt;https://github.com/darrrk&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=darrrk&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Zhao Lei &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#97;&amp;#x69;&amp;#x63;&amp;#x6f;&amp;#x79;&amp;#108;&amp;#x65;&amp;#x69;&amp;#64;&amp;#103;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#97;&amp;#x69;&amp;#x63;&amp;#x6f;&amp;#x79;&amp;#108;&amp;#x65;&amp;#x69;&amp;#64;&amp;#103;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt; (&lt;a href=&quot;https://github.com/firede&quot;&gt;https://github.com/firede&lt;/a&gt;) - &lt;a href=&quot;https://github.com/bevry/docpad/commits?author=firede&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/bevry/docpad/blob/master/Contributing.md#files&quot;&gt;Become a contributor!&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /BACKERS --&gt;
+
+
+&lt;h3 id=&quot;participants&quot;&gt;Participants&lt;/h3&gt;
+&lt;p&gt;Also thanks to all the countless others who have continued to raise DocPad even higher by submitting plugins, issues reports, discussion topics, IRC chat messages, and praise on twitter. We love you.&lt;/p&gt;
+&lt;!-- LICENSE/ --&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under the incredibly &lt;a href=&quot;http://en.wikipedia.org/wiki/Permissive_free_software_licence&quot;&gt;permissive&lt;/a&gt; &lt;a href=&quot;http://docpad.org/license&quot;&gt;MIT license&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright &amp;copy; 2012+ Bevry Pty Ltd &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#x75;&amp;#x73;&amp;#64;&amp;#x62;&amp;#101;&amp;#118;&amp;#114;&amp;#x79;&amp;#46;&amp;#x6d;&amp;#101;&quot;&gt;&amp;#x75;&amp;#x73;&amp;#64;&amp;#x62;&amp;#101;&amp;#118;&amp;#114;&amp;#x79;&amp;#46;&amp;#x6d;&amp;#101;&lt;/a&gt; (&lt;a href=&quot;http://bevry.me&quot;&gt;http://bevry.me&lt;/a&gt;)
+&lt;br/&gt;Copyright &amp;copy; 2011 Benjamin Lupton &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#x62;&amp;#x40;&amp;#x6c;&amp;#117;&amp;#112;&amp;#x74;&amp;#x6f;&amp;#110;&amp;#46;&amp;#99;&amp;#99;&quot;&gt;&amp;#x62;&amp;#x40;&amp;#x6c;&amp;#117;&amp;#112;&amp;#x74;&amp;#x6f;&amp;#110;&amp;#46;&amp;#99;&amp;#99;&lt;/a&gt; (&lt;a href=&quot;http://balupton.com&quot;&gt;http://balupton.com&lt;/a&gt;)&lt;/p&gt;
+&lt;!-- /LICENSE --&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sun Nov 24 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/bye&quot;&gt;This is a Goodbye Blog Post&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad-readme&quot;&gt;Benjamin Lupton's Blog&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/hello&quot;&gt;Hello World!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat May 05 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-ajaxy&quot;&gt;jQuery Ajaxy&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Thu Nov 14 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-history&quot;&gt;jQuery History&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 13 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/simple-server&quot;&gt;Simple Server&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 10 2009&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/tomahawk&quot;&gt;Tomahawk&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>Hello World!</title>
+			<link href="http://kittu.in/docpad-blog///posts/hello"/>
+			<updated>2013-11-15T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/hello</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Hello World! | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;Hello World!&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Friday, November 15, 2013
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro&quot;&gt;intro&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech&quot;&gt;tech&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test&quot;&gt;test&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;p&gt;This is a &lt;strong&gt;Hello world&lt;/strong&gt; post&lt;/p&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sun Nov 24 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/bye&quot;&gt;This is a Goodbye Blog Post&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 16 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad&quot;&gt;DocPad. Streamlined web development.&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat May 05 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-ajaxy&quot;&gt;jQuery Ajaxy&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Thu Nov 14 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-history&quot;&gt;jQuery History&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 13 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/simple-server&quot;&gt;Simple Server&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 10 2009&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/tomahawk&quot;&gt;Tomahawk&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>jQuery History</title>
+			<link href="http://kittu.in/docpad-blog///posts/jQuery-history"/>
+			<updated>2013-11-14T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/jQuery-history</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;jQuery History | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;jQuery History&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Thursday, November 14, 2013
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script&quot;&gt;script&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech&quot;&gt;tech&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp&quot;&gt;temp&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;p&gt;Super-seeded by github.com/balupton/history.js - jQuery History allows you to easily track changes of the pages state by tracking URL Hashes. Supports changes triggered by bookmarks and back &amp;amp; forward buttons, as well as cross browser support.&lt;/p&gt;
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Refer to the &lt;a href=&quot;http://balupton.github.com/jquery-history/demo/&quot;&gt;demo&lt;/a&gt; and the &lt;a href=&quot;https://github.com/balupton/jquery-history/tree/master/scripts/resources&quot;&gt;source code&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;query-strings&quot;&gt;Query Strings&lt;/h3&gt;
+&lt;p&gt;If you would like to have a QueryString in your hash and fetch the contents of it. So for example we have:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://localhost/page/#subpage?a=true&amp;amp;b=false&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And we would like to extract b. Then we can do:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var hashData = hash.queryStringToJSON();
+console.log(hashData); // {a:true,b:false}
+console.log(hashData.a); // true
+console.log(hashData.b); // false&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But first, you will have to download the queryStringToJSON function from within here:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://github.com/balupton/jquery-sparkle/blob/master/scripts/resources/core.string.js&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And place it within your own code. It is not included within jQuery History by default, as it is not essential.&lt;/p&gt;
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;You can discover the history inside the &lt;a href=&quot;https://github.com/balupton/jquery-history/blob/master/History.md#files&quot;&gt;History.md&lt;/a&gt; file&lt;/p&gt;
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/MIT/&quot;&gt;MIT License&lt;/a&gt;
+&lt;br/&gt;Copyright &amp;copy; 2008-2010 &lt;a href=&quot;http://balupton.com&quot;&gt;Benjamin Arthur Lupton&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.stilbuero.de/jquery/ui_history/&quot;&gt;jQuery UI History - Klaus Hartl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/reallysimplehistory/&quot;&gt;Really Simple History - Brian Dillard and Brad Neuberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mikage.to/jquery/jquery_history.html&quot;&gt;jQuery History Plugin - Taku Sano (Mikage Sawatari)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stilbuero.de/jquery/history/&quot;&gt;jQuery History Remote Plugin - Klaus Hartl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.contentwithstyle.co.uk/Articles/38/fixing-the-back-button-and-enabling-bookmarking-for-ajax-apps&quot;&gt;Content With Style: Fixing the back button and enabling bookmarking for ajax apps - Mike Stenhouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ajax.howtosetup.info/options-and-efficiencies/bookmarks-and-back-buttons/&quot;&gt;Bookmarks and Back Buttons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dev.aol.com/ajax-handling-bookmarks-and-back-button&quot;&gt;Ajax: How to handle bookmarks and back buttons - Brad Neuberg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sun Nov 24 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/bye&quot;&gt;This is a Goodbye Blog Post&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 16 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad&quot;&gt;DocPad. Streamlined web development.&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/hello&quot;&gt;Hello World!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat May 05 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-ajaxy&quot;&gt;jQuery Ajaxy&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 13 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/simple-server&quot;&gt;Simple Server&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 10 2009&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/tomahawk&quot;&gt;Tomahawk&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>Simple Server</title>
+			<link href="http://kittu.in/docpad-blog///posts/simple-server"/>
+			<updated>2012-11-13T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/simple-server</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Simple Server | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;Simple Server&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Tuesday, November 13, 2012
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro&quot;&gt;intro&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech&quot;&gt;tech&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;!-- DESCRIPTION/ --&gt;
+
+&lt;p&gt;Simple Server allows you to easily get a node.js static file server up and running anywhere anytime.&lt;/p&gt;
+&lt;!-- /DESCRIPTION --&gt;
+
+
+&lt;!-- INSTALL/ --&gt;
+
+&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://nodejs.org/&quot;&gt;Node&lt;/a&gt;, &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use: &lt;code&gt;require(&amp;#39;simple-server&amp;#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install: &lt;code&gt;npm install --save simple-server&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://ender.jit.su/&quot;&gt;Ender&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use: &lt;code&gt;require(&amp;#39;simple-server&amp;#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install: &lt;code&gt;ender add simple-server&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /INSTALL --&gt;
+
+
+&lt;h2 id=&quot;using&quot;&gt;Using&lt;/h2&gt;
+&lt;p&gt;To get your &lt;code&gt;public&lt;/code&gt; folder up and running on &lt;code&gt;http://localhost:3000&lt;/code&gt; simply type the following into terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;simple-server public 3000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first argument is the folder you want to serve, and the second argument is the port to serve from :)&lt;/p&gt;
+&lt;!-- HISTORY/ --&gt;
+
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/balupton/simple-server/blob/master/History.md#files&quot;&gt;Discover the change history by heading on over to the &lt;code&gt;History.md&lt;/code&gt; file.&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /HISTORY --&gt;
+
+
+&lt;!-- BACKERS/ --&gt;
+
+&lt;h2 id=&quot;backers&quot;&gt;Backers&lt;/h2&gt;
+&lt;h3 id=&quot;maintainers&quot;&gt;Maintainers&lt;/h3&gt;
+&lt;p&gt;These amazing people are maintaining this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Benjamin Lupton &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#98;&amp;#64;&amp;#108;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#99;&quot;&gt;&amp;#98;&amp;#64;&amp;#108;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#x6e;&amp;#46;&amp;#x63;&amp;#99;&lt;/a&gt; (&lt;a href=&quot;https://github.com/balupton&quot;&gt;https://github.com/balupton&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sponsors&quot;&gt;Sponsors&lt;/h3&gt;
+&lt;p&gt;No sponsors yet! Will you be the first?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gittip.com/balupton/&quot; title=&quot;Donate weekly to this project using Gittip&quot;&gt;&lt;img src=&quot;http://img.shields.io/gittip/balupton.png&quot; alt=&quot;Gittip donate button&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;http://flattr.com/thing/344188/balupton-on-Flattr&quot; title=&quot;Donate monthly to this project using Flattr&quot;&gt;&lt;img src=&quot;https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif&quot; alt=&quot;Flattr donate button&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=QB8GQPZAH84N6&quot; title=&quot;Donate once-off to this project using Paypal&quot;&gt;&lt;img src=&quot;https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif&quot; alt=&quot;PayPayl donate button&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;contributors&quot;&gt;Contributors&lt;/h3&gt;
+&lt;p&gt;These amazing people have contributed code to this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;balupton (&lt;a href=&quot;https://github.com/balupton&quot;&gt;https://github.com/balupton&lt;/a&gt;) - &lt;a href=&quot;https://github.com/balupton/simple-server/commits?author=balupton&quot;&gt;view contributions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/balupton/simple-server/blob/master/Contributing.md#files&quot;&gt;Become a contributor!&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /BACKERS --&gt;
+
+
+&lt;!-- LICENSE/ --&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under the incredibly &lt;a href=&quot;http://en.wikipedia.org/wiki/Permissive_free_software_licence&quot;&gt;permissive&lt;/a&gt; &lt;a href=&quot;http://creativecommons.org/licenses/MIT/&quot;&gt;MIT license&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright &amp;copy; 2011+ Benjamin Lupton &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#98;&amp;#x40;&amp;#x6c;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x63;&quot;&gt;&amp;#98;&amp;#x40;&amp;#x6c;&amp;#117;&amp;#112;&amp;#x74;&amp;#111;&amp;#110;&amp;#x2e;&amp;#x63;&amp;#x63;&lt;/a&gt; (&lt;a href=&quot;http://balupton.com&quot;&gt;http://balupton.com&lt;/a&gt;)&lt;/p&gt;
+&lt;!-- /LICENSE --&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sun Nov 24 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/bye&quot;&gt;This is a Goodbye Blog Post&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 16 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad&quot;&gt;DocPad. Streamlined web development.&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/hello&quot;&gt;Hello World!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat May 05 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-ajaxy&quot;&gt;jQuery Ajaxy&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Thu Nov 14 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-history&quot;&gt;jQuery History&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 10 2009&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/tomahawk&quot;&gt;Tomahawk&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>jQuery Ajaxy</title>
+			<link href="http://kittu.in/docpad-blog///posts/jQuery-ajaxy"/>
+			<updated>2012-05-05T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/jQuery-ajaxy</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;jQuery Ajaxy | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;jQuery Ajaxy&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Saturday, May 05, 2012
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script&quot;&gt;script&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech&quot;&gt;tech&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test&quot;&gt;test&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;p&gt;This plugin aims at solving complicated AJAX Paradigms by providing you with a easy managed solution to bind into page state (URL Hash) changes, AJAX form submits, and support AJAX links.&lt;/p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Refer to the &lt;a href=&quot;http://balupton.github.com/jquery-ajaxy/demo/&quot;&gt;demo&lt;/a&gt; and the &lt;a href=&quot;https://github.com/balupton/jquery-ajaxy/tree/master/scripts/resources&quot;&gt;source code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To discover available configuration options, refer to &lt;a href=&quot;https://github.com/balupton/jquery-ajaxy/blob/master/scripts/resources/jquery.ajaxy.js#L36-156&quot;&gt;lines 36 to 156 in the &lt;code&gt;scripts/resources/jquery.ajaxy.js&lt;/code&gt; file&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;history&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;You can discover the history inside the &lt;a href=&quot;https://github.com/balupton/jquery-ajaxy/blob/master/History.md#files&quot;&gt;History.md&lt;/a&gt; file&lt;/p&gt;
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+&lt;p&gt;Licensed under the &lt;a href=&quot;http://creativecommons.org/licenses/MIT/&quot;&gt;MIT License&lt;/a&gt;
+&lt;br/&gt;Copyright &amp;copy; 2008-2010 &lt;a href=&quot;http://balupton.com&quot;&gt;Benjamin Arthur Lupton&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.stilbuero.de/jquery/ui_history/&quot;&gt;jQuery UI History - Klaus Hartl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/reallysimplehistory/&quot;&gt;Really Simple History - Brian Dillard and Brad Neuberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mikage.to/jquery/jquery_history.html&quot;&gt;jQuery History Plugin - Taku Sano (Mikage Sawatari)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stilbuero.de/jquery/history/&quot;&gt;jQuery History Remote Plugin - Klaus Hartl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.contentwithstyle.co.uk/Articles/38/fixing-the-back-button-and-enabling-bookmarking-for-ajax-apps&quot;&gt;Content With Style: Fixing the back button and enabling bookmarking for ajax apps - Mike Stenhouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ajax.howtosetup.info/options-and-efficiencies/bookmarks-and-back-buttons/&quot;&gt;Bookmarks and Back Buttons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dev.aol.com/ajax-handling-bookmarks-and-back-button&quot;&gt;Ajax: How to handle bookmarks and back buttons - Brad Neuberg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sun Nov 24 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/bye&quot;&gt;This is a Goodbye Blog Post&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 16 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad&quot;&gt;DocPad. Streamlined web development.&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/hello&quot;&gt;Hello World!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Thu Nov 14 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-history&quot;&gt;jQuery History&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 13 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/simple-server&quot;&gt;Simple Server&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 10 2009&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/tomahawk&quot;&gt;Tomahawk&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>Tomahawk</title>
+			<link href="http://kittu.in/docpad-blog///posts/tomahawk"/>
+			<updated>2009-11-10T00:00:00.000Z</updated>
+			<id>http://kittu.in/docpad-blog///posts/tomahawk</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Tomahawk | NovoGeek.com | Krishna's weblog&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Technical insights of a modern web geek :)&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Krishna Chaitanya Telikicherla&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.54.7&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+	&lt;!--
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	--&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/bootstrap-flatly.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://kittu.in/docpad-blog/styles/blog-home.css&quot; /&gt;
+&lt;/head&gt;
+
+  &lt;body&gt;
+	&lt;header class=&quot;container&quot;&gt;
+		&lt;div class=&quot;splash&quot;&gt;
+			&lt;h1&gt;Awesome blog&lt;/h1&gt;
+			&lt;p&gt;Created using Docpad, the most awesome static site generator.&lt;/p&gt;
+			&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+		  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		  &lt;div class=&quot;navbar-header&quot;&gt;
+			&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+			  &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			  &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Brand&lt;/a&gt;--&gt;
+		  &lt;/div&gt;
+
+		  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+			&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/about/index.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/archive/index.html&quot;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;http://kittu.in/docpad-blog/pages/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+			  	&lt;!--
+					
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/about&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							About
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/archive&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/archive&quot; property=&quot;dc:title&quot;&gt;
+							Archive
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+					&lt;li
+						typeof=&quot;sioc:Page&quot;
+						about=&quot;/pages/contact&quot;
+						class=&quot;&quot;
+					&gt;
+						&lt;a href=&quot;/pages/contact&quot; property=&quot;dc:title&quot;&gt;
+							Contact
+						&lt;/a&gt;
+					&lt;/li&gt;
+				
+			 --&gt;
+			&lt;/ul&gt;
+			&lt;form class=&quot;navbar-form navbar-right&quot; role=&quot;search&quot;&gt;
+			  &lt;div class=&quot;form-group&quot;&gt;
+				&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+			  &lt;/div&gt;
+			  &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/form&gt;
+		  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;&lt;!-- /.container --&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-8&quot;&gt;
+			&lt;!-- begin blog entry --&gt;
+			&lt;!-- Content --&gt;
+			&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+				&lt;article class=&quot;panel panel-default&quot;&gt;
+    &lt;header class=&quot;panel-heading&quot;&gt;
+		&lt;h2 class=&quot;panel-title&quot;&gt;Tomahawk&lt;/h2&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+        &lt;div class=&quot;spDateTags&quot;&gt;
+			&lt;span class=&quot;glyphicon glyphicon-time&quot;&gt; &lt;/span&gt; Tuesday, November 10, 2009
+			&lt;ul id=&quot;post-tags&quot; class=&quot;breadcrumb&quot;&gt;
+    
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro&quot;&gt;intro&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+            &lt;li&gt;
+              &lt;span class=&quot;glyphicon glyphicon-tag&quot;&gt;&lt;/span&gt;
+              &lt;span class=&quot;spTag&quot;&gt; &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script&quot;&gt;script&lt;/a&gt;&lt;/span&gt;
+            &lt;/li&gt;
+        
+    
+&lt;/ul&gt;
+			&lt;hr&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;summary&quot;&gt;
+			&lt;div&gt;&lt;p&gt;Required dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CMake 2.8.6 - &lt;a href=&quot;http://www.cmake.org/&quot;&gt;http://www.cmake.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Qt 4.7.0 - &lt;a href=&quot;http://qt-project.org/&quot;&gt;http://qt-project.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Phonon 4.6.0 - &lt;a href=&quot;http://phonon.kde.org/&quot;&gt;http://phonon.kde.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QJson 0.8.1 - &lt;a href=&quot;http://qjson.sourceforge.net/&quot;&gt;http://qjson.sourceforge.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SQLite 3.6.22 - &lt;a href=&quot;http://www.sqlite.org/&quot;&gt;http://www.sqlite.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TagLib 1.6.2 - &lt;a href=&quot;http://developer.kde.org/~wheeler/taglib.html&quot;&gt;http://developer.kde.org/~wheeler/taglib.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Boost 1.3 - &lt;a href=&quot;http://www.boost.org/&quot;&gt;http://www.boost.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CLucene 0.9.23 (0.9.21 will fail) - &lt;a href=&quot;http://clucene.sourceforge.net/download.shtml&quot;&gt;http://clucene.sourceforge.net/download.shtml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libechonest 2.0.3 - &lt;a href=&quot;http://projects.kde.org/projects/playground/libs/libechonest/&quot;&gt;http://projects.kde.org/projects/playground/libs/libechonest/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Attica 0.4.0 - ftp://ftp.kde.org/pub/kde/stable/attica/&lt;/li&gt;
+&lt;li&gt;QuaZip 0.4.3 - &lt;a href=&quot;http://quazip.sourceforge.net/&quot;&gt;http://quazip.sourceforge.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;liblastfm 1.0.1 - &lt;a href=&quot;https://github.com/lastfm/liblastfm/&quot;&gt;https://github.com/lastfm/liblastfm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QtKeychain 0.1 - &lt;a href=&quot;https://github.com/frankosterfeld/qtkeychain/&quot;&gt;https://github.com/frankosterfeld/qtkeychain/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following dependencies are optional, but recommended:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jreen 1.0.5 (1.1.0 will fail, 1.1.1 is fine) - &lt;a href=&quot;http://qutim.org/jreen/&quot;&gt;http://qutim.org/jreen/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QTweetLib 0.5.0 - &lt;a href=&quot;https://github.com/minimoog/QTweetLib/&quot;&gt;https://github.com/minimoog/QTweetLib/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Third party libraries that we ship with our source:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MiniUPnP 1.6 - &lt;a href=&quot;http://miniupnp.free.fr/&quot;&gt;http://miniupnp.free.fr/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Breakpad - &lt;a href=&quot;http://code.google.com/p/google-breakpad/&quot;&gt;http://code.google.com/p/google-breakpad/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Qocoa - &lt;a href=&quot;https://github.com/mikemcquaid/Qocoa/&quot;&gt;https://github.com/mikemcquaid/Qocoa/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libqnetwm - &lt;a href=&quot;http://code.google.com/p/libqnetwm/&quot;&gt;http://code.google.com/p/libqnetwm/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;libqxt (QxtWeb module) - &lt;a href=&quot;http://libqxt.org/&quot;&gt;http://libqxt.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SPMediaKeyTap - &lt;a href=&quot;https://github.com/nevyn/SPMediaKeyTap/&quot;&gt;https://github.com/nevyn/SPMediaKeyTap/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;kdSingleApplicationGuard - &lt;a href=&quot;http://www.kdab.com/&quot;&gt;http://www.kdab.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;   
+&lt;/article&gt;
+
+&lt;footer&gt;
+	
+	&lt;section id=&quot;related&quot;&gt;
+		&lt;h3&gt;Related Posts&lt;/h3&gt;
+		&lt;nav class=&quot;linklist&quot;&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 16 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/docpad&quot;&gt;DocPad. Streamlined web development.&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Fri Nov 15 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/hello&quot;&gt;Hello World!&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat May 05 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-ajaxy&quot;&gt;jQuery Ajaxy&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Thu Nov 14 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/jQuery-history&quot;&gt;jQuery History&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Tue Nov 13 2012&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/simple-server&quot;&gt;Simple Server&lt;/a&gt;&lt;/li&gt;
+			
+				&lt;li&gt;&lt;span&gt;Sat Nov 30 2013&lt;/span&gt;
+				&amp;raquo;
+				&lt;a href=&quot;/posts/test.md&quot;&gt;Future post!&lt;/a&gt;&lt;/li&gt;
+			
+		&lt;/nav&gt;
+	&lt;/section&gt;
+	
+&lt;/footer&gt;
+			&lt;/section&gt;
+			&lt;!-- end blog entry --&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+			&lt;div class=&quot;well&quot;&gt;
+				&lt;h4&gt;Tag Cloud&lt;/h4&gt;
+				&lt;div id=&quot;divTagCanvas&quot;&gt;
+					&lt;canvas width=&quot;300&quot; height=&quot;300&quot; id=&quot;myCanvas&quot;&gt;&lt;/canvas&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;divTagList&quot;&gt;
+				﻿
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/outro.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        outro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/tech.html&quot; data-tag-count=&quot;5&quot; data-tag-weight=&quot;1&quot;&gt;
+        tech
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/script.html&quot; data-tag-count=&quot;4&quot; data-tag-weight=&quot;0.8613531161467861&quot;&gt;
+        script
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/intro.html&quot; data-tag-count=&quot;3&quot; data-tag-weight=&quot;0.6826061944859854&quot;&gt;
+        intro
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/test.html&quot; data-tag-count=&quot;2&quot; data-tag-weight=&quot;0.43067655807339306&quot;&gt;
+        test
+    &lt;/a&gt;
+
+    &lt;a href=&quot;http://kittu.in/docpad-blog//tags/temp.html&quot; data-tag-count=&quot;1&quot; data-tag-weight=&quot;0&quot;&gt;
+        temp
+    &lt;/a&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Blog Search&lt;/h4&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+              &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /input-group --&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Popular Blog Categories&lt;/h4&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#dinosaurs&quot;&gt;Dinosaurs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#spaceships&quot;&gt;Spaceship&lt;/a&gt;s&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fried-foods&quot;&gt;Fried Foods&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#wild-animals&quot;&gt;Wild Animals&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-lg-6&quot;&gt;
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#alien-abductions&quot;&gt;Alien Abductions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#business-casual&quot;&gt;Business Casual&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#fireworks&quot;&gt;Fireworks&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+          &lt;div class=&quot;well&quot;&gt;
+            &lt;h4&gt;Side Widget Well&lt;/h4&gt;
+            &lt;p&gt;Bootstrap's default well's work great for side widgets! What is a widget anyways...?&lt;/p&gt;
+          &lt;/div&gt;&lt;!-- /well --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;hr&gt;
+      
+      &lt;footer&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;p&gt;Copyright &amp;copy; NovoGeek.com 2013 &amp;middot;  @novogeek&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+    &lt;/div&gt;&lt;!-- /.container --&gt;
+
+    &lt;!-- Bootstrap core JavaScript --&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ --&gt;
+	&lt;!--&lt;script src=&quot;/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/bootstrap.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;--&gt;
+	&lt;!--[if lt IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/excanvas.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+
+	&lt;!-- DocPad Scripts + Our Own --&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/jquery.tagcanvas.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://kittu.in/docpad-blog/scripts/custom.js&quot;&gt;&lt;/script&gt;
+	&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+		</entry>
+	
+</feed>
