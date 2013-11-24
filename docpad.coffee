@@ -16,13 +16,13 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://novogeek.com"
+			url: "http://kittu.in/docpad-blog/"
 
 			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
-			]
+			#oldUrls: [
+			#	'www.website.com',
+			#	'website.herokuapp.com'
+			#]
 
 			# The default title of our website
 			title: "NovoGeek.com | Krishna's weblog"
@@ -45,18 +45,18 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"/styles/bootstrap-flatly.css"
+				"styles/bootstrap-flatly.css"
                     #"/styles/bootstrap-original.css"
-				"/styles/blog-home.css"
+				"styles/blog-home.css"
 			]
 
 			# Scripts
 			scripts: [
-				"/scripts/jquery.min.js"
-				"/scripts/modernizr.min.js"
-				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
-				"/scripts/script.js"
-                "/scripts/jquery.tagcanvas.min.js"
+				"scripts/jquery.min.js"
+				"scripts/modernizr.min.js"
+				"vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
+                "scripts/jquery.tagcanvas.min.js"
+                "scripts/custom.js"
 			]
 
 
