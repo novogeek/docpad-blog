@@ -46,8 +46,7 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"/styles/bootstrap-flatly.css"
-                #"/styles/bootswatch.css"
-                #"/styles/bootstrap-original.css"
+                    #"/styles/bootstrap-original.css"
 				"/styles/blog-home.css"
 			]
 
@@ -109,6 +108,8 @@ docpadConfig = {
 	# Plugins
 
 	plugins:
+        tagging:
+            collectionName: 'posts' #Data for @getTagCloud() in "tagCloud.html.eco" is pulled from this collection
 		downloader:
 			downloads: [
 				{
@@ -118,7 +119,6 @@ docpadConfig = {
 					tarExtractClean: true
 				}
 			]
-
 
 	# =================================
 	# DocPad Events

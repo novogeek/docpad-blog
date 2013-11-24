@@ -1,7 +1,7 @@
 ```
 title: jQuery Ajaxy
 status: publish
-tags: ['script']
+tags: ['script', 'tech', 'test']
 date: "2012-05-05"
 ```
 This plugin aims at solving complicated AJAX Paradigms by providing you with a easy managed solution to bind into page state (URL Hash) changes, AJAX form submits, and support AJAX links.

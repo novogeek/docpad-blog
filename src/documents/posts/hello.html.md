@@ -1,7 +1,7 @@
 ```
 title: Hello World!
 status: publish
-tags: ['intro']
+tags: ['intro', 'tech', 'test']
 date: "2013-11-15"
 ```
 

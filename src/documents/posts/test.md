@@ -1,7 +1,7 @@
 ---
 title: Future post!
 status: draft
-tags: ['test']
+tags: ['test', 'tech', 'intro']
 date: "2013-11-30"
 ---
 

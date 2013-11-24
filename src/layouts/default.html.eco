@@ -53,12 +53,13 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/">Home</a>
+			<!--<a class="navbar-brand" href="/">Brand</a>-->
 		  </div>
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
 			  	<% for document in @getCollection('pages').toJSON(): %>
 				<li
 					typeof="sioc:Page"
@@ -75,7 +76,7 @@
 			  <div class="form-group">
 				<input type="text" class="form-control" placeholder="Search">
 			  </div>
-			  <button type="submit" class="btn btn-default">Submit</button>
+			  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
 			</form>
 		  </div><!-- /.navbar-collapse -->
 		</nav>
@@ -95,12 +96,12 @@
         </div>
         
         <div class="col-lg-4">
-		<div class="well">
-            <h4>Tag Cloud</h4>
-            <div>
-            <%- @partial('tagCloud.html.eco') %>
-            </div><!-- /input-group -->
-          </div><!-- /well -->
+			<div class="well">
+				<h4>Tag Cloud</h4>
+				<div id="divTagCloud">
+					<%- @partial('tagCloud.html.eco') %>
+				</div>
+			</div><!-- /well -->
           <div class="well">
             <h4>Blog Search</h4>
             <div class="input-group">
@@ -155,5 +156,12 @@
     <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
     <script src="/scripts/jquery.js"></script>
     <script src="/scripts/bootstrap.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#divTagCloud a').each(function(){
+				console.log($(this).attr('data-tag-weight'));
+			});
+		});
+	</script>
   </body>
 </html>

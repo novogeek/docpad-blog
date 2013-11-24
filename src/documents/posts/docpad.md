@@ -1,7 +1,7 @@
 ---
 title: DocPad. Streamlined web development.
 status: publish
-tags: ['outro']
+tags: ['outro', 'tech', 'script']
 date: "2013-11-16"
 ---
 

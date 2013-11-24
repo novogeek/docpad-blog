@@ -3,8 +3,8 @@ layout: default
 ---
 <% posts = @getCollection('posts') %>
 <div>
-	<h2><%= "Posts tagged as '#{@document.tag}'" %></h2>
-    <% for doc in @getFilesAtPath("posts").findAll({ tags: '$in': @document.tag}, [{ date: -1 }]).toJSON(): %>
+	<h2 class="taggedAs"><%= "Posts tagged as '#{@document.tag}'" %></h2>
+    <% for doc in @getCollection("posts").findAll({ tags: '$in': @document.tag}, [{ date: -1 }]).toJSON(): %>
         <article class="panel panel-default">
         <header class="panel-heading">
             <h2 class="panel-title"><a href='<%= doc.url %>'><%= doc.title %></a></h2>

@@ -1,7 +1,7 @@
 ```
 title: jQuery History
 status: publish
-tags: ['script']
+tags: ['script', 'tech', 'temp']
 date: "2013-11-14"
 ```
 Super-seeded by github.com/balupton/history.js - jQuery History allows you to easily track changes of the pages state by tracking URL Hashes. Supports changes triggered by bookmarks and back & forward buttons, as well as cross browser support.

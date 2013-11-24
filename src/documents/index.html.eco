@@ -23,7 +23,7 @@ pageSize: 3
 				</div>
 				<div class="summary">
 					<div><%- @generateSummary(doc) %></div>
-					<div><a class="btn btn-primary btn-sm" href='<%= doc.url %>'>Read More <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+					<div class="divReadMore"><a class="btn btn-primary btn-sm" href='<%= doc.url %>'>Read More <span class="glyphicon glyphicon-chevron-right"></span></a></div>
 				</div>
 			</div>   
         </article>
