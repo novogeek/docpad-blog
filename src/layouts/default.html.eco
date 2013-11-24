@@ -98,8 +98,11 @@
         <div class="col-lg-4">
 			<div class="well">
 				<h4>Tag Cloud</h4>
-				<div id="divTagCloud">
-					<%- @partial('tagCloud.html.eco') %>
+				<div id="divTagCanvas">
+					<canvas width="300" height="300" id="myCanvas"></canvas>
+				</div>
+				<div id="divTagList">
+				<%- @partial('tagCloud.html.eco') %>
 				</div>
 			</div><!-- /well -->
           <div class="well">
@@ -154,14 +157,25 @@
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
-    <script src="/scripts/jquery.js"></script>
-    <script src="/scripts/bootstrap.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('#divTagCloud a').each(function(){
-				console.log($(this).attr('data-tag-weight'));
-			});
-		});
+	<script src="/scripts/jquery.min.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
+	<script src="/scripts/jquery.tagcanvas.min.js"></script>
+	<script src="/scripts/modernizr.min.js"></script>
+	<!--[if lt IE 9]><script type="text/javascript" src="/scripts/excanvas.js"></script><![endif]-->
+	<script type="text/javascript">
+	  $(document).ready(function() {
+		if(!$('#myCanvas').tagcanvas({
+			textColour: '#2c3e50',
+			outlineColour: '#2c3e50',
+			initial: [0.1, -0.1],
+			reverse: true,
+			depth: 0.8,
+			maxSpeed: 0.05
+		},'divTagList')) {
+			// something went wrong, hide the canvas container
+			$('#divTagCanvas').hide();
+		}
+	});	
 	</script>
   </body>
 </html>
